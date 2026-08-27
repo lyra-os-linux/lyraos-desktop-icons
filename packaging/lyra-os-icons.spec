@@ -3,8 +3,8 @@ Version:        1.1.0
 Release:        1%{?dist}
 Summary:        Flat sapphire icon theme for Lyra OS
 License:        GPL-3.0-or-later
-URL:            https://github.com/lyra-os-linux/lyraos-desktop-theme
-Source0:        lyra-os-theme-%{version}.tar.xz
+URL:            https://github.com/lyra-os-linux/lyraos-desktop-icons
+Source0:        lyra-os-icons-%{version}.tar.xz
 BuildArch:      noarch
 Requires:       adwaita-icon-theme
 
@@ -13,7 +13,7 @@ Icon theme for Lyra OS. It provides branded vector icons for common
 places, devices and applications and inherits Adwaita for complete GNOME coverage.
 
 %prep
-%autosetup -n lyra-os-theme-%{version}
+%autosetup -n lyra-os-icons-%{version}
 
 %build
 ./scripts/build-icons.sh
