@@ -13,6 +13,7 @@ link_icon() {
 }
 
 link_icon places folder folder-documents folder-download folder-music folder-pictures folder-publicshare folder-templates folder-videos
+link_icon places user-desktop folder-desktop
 link_icon places user-home user-home-symbolic
 link_icon devices computer computer-symbolic video-display
 link_icon devices drive-harddisk drive-harddisk-symbolic drive-removable-media

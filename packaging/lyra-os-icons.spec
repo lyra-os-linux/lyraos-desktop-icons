@@ -1,5 +1,5 @@
 Name:           lyra-os-icons
-Version:        1.9.2
+Version:        1.9.3
 Release:        1%{?dist}
 Summary:        Flat sapphire icon theme for Lyra OS
 License:        GPL-3.0-or-later
