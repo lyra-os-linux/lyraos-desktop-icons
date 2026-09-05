@@ -20,5 +20,5 @@ link_icon apps applications-system applications-other system-software-install
 link_icon apps org.gnome.Settings preferences-system org.gnome.Settings.Devel
 link_icon apps utilities-terminal org.gnome.Console org.gnome.Terminal
 link_icon status user-trash user-trash-full
+python3 "$root/scripts/build-accent-icons.py"
 printf 'Built Lyra OS Icons in %s\n' "$out"
-

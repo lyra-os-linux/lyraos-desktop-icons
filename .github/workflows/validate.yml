@@ -6,7 +6,9 @@ jobs:
     container: opensuse/tumbleweed:latest
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - run: zypper --non-interactive install python3
       - run: ./scripts/build-icons.sh
+      - run: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
       - run: |
           test -f dist/Lyra-OS-Icons/index.theme
           test -L dist/Lyra-OS-Icons/scalable/places/folder-documents.svg

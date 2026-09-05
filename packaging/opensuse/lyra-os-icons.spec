@@ -8,6 +8,7 @@ License:        GPL-3.0-or-later
 URL:            https://github.com/lyra-os-linux/lyraos-desktop-icons
 Source0:        lyra-icons-src-%{version}.tar.gz
 BuildArch:      noarch
+BuildRequires:  python3
 Requires:       adwaita-icon-theme
 
 %description
@@ -22,10 +23,10 @@ places, devices and applications and inherits Adwaita for complete GNOME coverag
 
 %install
 install -d %{buildroot}%{_datadir}/icons
-cp -a dist/Lyra-OS-Icons %{buildroot}%{_datadir}/icons/
+cp -a dist/Lyra-OS-Icons* %{buildroot}%{_datadir}/icons/
 
 %files
 %license LICENSE
-%{_datadir}/icons/Lyra-OS-Icons/
+%{_datadir}/icons/Lyra-OS-Icons*/
 
 %changelog
