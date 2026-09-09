@@ -24,9 +24,13 @@ places, devices and applications and inherits Adwaita for complete GNOME coverag
 %install
 install -d %{buildroot}%{_datadir}/icons
 cp -a dist/Lyra-OS-Icons* %{buildroot}%{_datadir}/icons/
+# OS identity remains visible with Adwaita or another desktop icon theme.
+install -D -m 0644 src/icons/scalable/apps/distributor-logo-lyra.svg \
+  %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/distributor-logo-lyra.svg
 
 %files
 %license LICENSE
 %{_datadir}/icons/Lyra-OS-Icons*/
+%{_datadir}/icons/hicolor/scalable/apps/distributor-logo-lyra.svg
 
 %changelog
