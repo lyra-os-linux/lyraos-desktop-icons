@@ -27,3 +27,10 @@ de monitor, sem depender da cor do ícone herdado do Adwaita.
 
 O pacote `lyra-os-theme` sincroniza a variante com a cor escolhida no GNOME.
 Essa integração não escreve configurações de KDE ou XFCE.
+
+## Identidade na tela Sobre
+
+O ícone `distributor-logo-lyra` contém a mesma marca usada pelo Sheliak e
+é instalado nos temas Lyra e em `hicolor`, para funcionar também com Adwaita.
+A identificação da distribuição deve declarar `LOGO="distributor-logo-lyra"`
+em `os-release`. O pacote de ícones não substitui a identificação da base.

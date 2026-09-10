@@ -1,5 +1,5 @@
 Name:           lyra-os-icons
-Version:        1.9.3
+Version:        1.9.4
 Release:        1%{?dist}
 Summary:        Flat sapphire icon theme for Lyra OS
 License:        GPL-3.0-or-later
@@ -22,10 +22,14 @@ places, devices and applications and inherits Adwaita for complete GNOME coverag
 %install
 install -d %{buildroot}%{_datadir}/icons
 cp -a dist/Lyra-OS-Icons* %{buildroot}%{_datadir}/icons/
+# OS identity remains visible with Adwaita or another desktop icon theme.
+install -D -m 0644 src/icons/scalable/apps/distributor-logo-lyra.svg \
+  %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/distributor-logo-lyra.svg
 
 %files
 %license LICENSE
 %{_datadir}/icons/Lyra-OS-Icons*/
+%{_datadir}/icons/hicolor/scalable/apps/distributor-logo-lyra.svg
 
 %changelog
 * Sun Jul 19 2026 Lyra OS Team <rodrigo@lyraos.com.br> - 1.1.0-1
