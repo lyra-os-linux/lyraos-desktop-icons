@@ -7,7 +7,9 @@ URL:            https://github.com/lyra-os-linux/lyraos-desktop-icons
 Source0:        lyra-os-icons-%{version}.tar.xz
 BuildArch:      noarch
 BuildRequires:  python3
+BuildRequires:  hicolor-icon-theme
 Requires:       adwaita-icon-theme
+Requires:       hicolor-icon-theme
 
 %description
 Icon theme for Lyra OS. It provides branded vector icons for common
